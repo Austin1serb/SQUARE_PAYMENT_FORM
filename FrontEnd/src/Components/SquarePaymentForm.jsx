@@ -13,13 +13,18 @@ const SquarePaymentForm = ({ onPaymentProcess }) => {
 
 
 
-    const cardStyles = {
-        //more styles here
-        width: '50%',
 
-    }
+const cardStyles = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    height: '100vh',
+}
     return (
         <div style={cardStyles}>
+            <img src="https://images.ctfassets.net/2d5q1td6cyxq/58rgox9CjnDZYQSxSwikxb/d9cae0bf4d3f53900820eac00b049528/PD04488_-_black_logo_on_white.png?w=1502&h=768&fm=avif&q=85&fit=scale" alt="square-logo" className='checkout-paymentForm-logo' height={200} width={391} style={{marginBottom:'-80px'}} />
+            <h1 > Payment Form</h1>
             <PaymentForm
                 applicationId={applicationId}
                 locationId={locationId}
